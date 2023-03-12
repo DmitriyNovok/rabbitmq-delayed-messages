@@ -4,6 +4,7 @@ namespace src\Publisher;
 
 use PhpAmqpLib\Message\AMQPMessage;
 use PhpAmqpLib\Wire\AMQPTable;
+use src\Connection\Connection;
 
 class Publisher
 {
@@ -13,6 +14,9 @@ class Publisher
     public function publisher()
     {
         $this->delay = 7;
+
+        $connection = (new Connection())->connection();
+        $channel = $connection->channel();
 
         while (true) {
             $msg = time();
