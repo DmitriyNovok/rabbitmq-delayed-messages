@@ -1,2 +1,2 @@
 # rabbitmq-delayed-messages
-Delayed Messaging for RabbitMQ
+Delayed messaging for RabbitMQ on PHP
