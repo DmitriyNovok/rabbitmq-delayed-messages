@@ -7,6 +7,11 @@ use src\Connection\Connection;
 
 class Receive
 {
+    public function __construct()
+    {
+        $this->receive();
+    }
+
     public function receive(): void
     {
         $connection = (new Connection())->connection();

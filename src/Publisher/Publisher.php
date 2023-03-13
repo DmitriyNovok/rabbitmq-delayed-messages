@@ -11,6 +11,11 @@ class Publisher
     public int $delay = 0;
     private int $max_priority = MAX_PRIORITY;
 
+    public function __construct()
+    {
+        $this->publisher();
+    }
+
     public function publisher()
     {
         $this->delay = 7;
@@ -38,5 +43,4 @@ class Publisher
             sleep(1);
         }
     }
-
 }
