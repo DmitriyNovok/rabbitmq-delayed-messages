@@ -17,7 +17,11 @@ class Connection
         if ($this->connection === null) {
 
             $connection = new AMQPStreamConnection(
-                HOST, PORT, USER, PASSWORD, VHOST
+                HOST,
+                PORT,
+                USER,
+                PASSWORD,
+                VHOST
             );
 
             $channel = $connection->channel();
