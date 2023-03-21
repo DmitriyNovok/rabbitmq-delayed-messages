@@ -1,9 +1,9 @@
 <?php
 
-const DRIVER = 'rabbitmq';
-const HOST = 'localhost';
-const PORT = 5672;
-const USER = 'guest';
-const PASSWORD = 'guest';
-const MAX_PRIORITY = 255;
-const VHOST = '/';
+define('DRIVER', 'rabbitmq');
+define('HOST' , 'localhost');
+define('PORT', 5672);
+define('USER', 'guest');
+define('PASSWORD', 'guest');
+define('MAX_PRIORITY', 255);
+define('VHOST', '/');
